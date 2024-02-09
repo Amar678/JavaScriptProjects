@@ -1,0 +1,46 @@
+body{
+    background-color: #282D35;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding :30px 25px;
+}
+.nav-icon{
+    margin-right: 7px;
+}
+.nav--logo_text{
+    margin-right: auto;
+    color:#61DAFB;
+    font-weight: 800;
+    font-size: 22px;
+}
+.nav--title{
+    color:#DEEBF8;
+}
+main{
+padding: 57px 27px;
+color:white;
+background-image: url("https://global-uploads.webflow.com/618fa90c201104b94458e1fb/62f25059bc47b274d9fe73c3_Top-10-best-VSCode-extensions-for-React-js_MAin-Image.jpg") ;
+background-repeat: no-repeat;
+}
+.main--title{
+ margin: 0;   
+ font-size: 39px;
+ letter-spacing: -0.05em;
+}
+.main--facts{
+    margin-top: 46px;
+    max-width: 400px;
+}
+.main--facts > li{
+    line-height: 20px;
+    padding-block: 10px;
+}
+.main--facts > li::marker{
+  font-size: 1.4rem;
+  color:#61DAFB;
+}
