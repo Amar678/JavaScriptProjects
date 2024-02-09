@@ -1,0 +1,28 @@
+body{
+    font-size: large;
+    
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:800;
+    box-shadow:royalblue;
+}
+.nav-logo{
+    width:60px;
+}
+.nav-items{
+    list-style : none;
+    display: flex;
+}
+.nav-items li{
+    padding: 10px;
+}
+.footer{
+background-color: lightgray;
+padding:10px;
+position: fixed;
+bottom:0;
+width:100%;
+}

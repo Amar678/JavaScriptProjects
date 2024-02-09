@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey Protein</title>
+    <link rel="stylesheet" href="e_Commerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+      <div class="container">
+        <nav class="navbar navbar-expand-lg  navbar-light bg-info fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">WHEY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Info</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Flavours
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a  class="dropdown-item option-1" href="#">Strawberry</a></li>
+                    <li><a  class="dropdown-item option-2" href="#">PineApple</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item option-3" href="#">SPecial Flavour</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Blogs</a>
+                </li>
+              </ul>
+                
+                <div id="signup-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <form action="submit-form.php" method="post">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" id="fullname" name="fullname" required>
+                    
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                    
+                      <label for="password1">Password</label>
+                      <input type="password" id="password1" name="password1"  required>
+                    
+                      <label for="confirm-password">Confirm Password</label>
+                      <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                      <input type="submit" value="Sign Up">
+                    </form>
+                    
+                  </div>
+                </div>
+
+                <div id="login-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="remove">&times;</span>
+                    
+                    <form action="submit-form.php" method="post">
+                      <label for="username">User Name</label>
+                      <input type="text" id="username" name="username" required>
+                    
+                      <label for="password2">Password</label>
+                      <input type="password" id="password2" name="password2" required>
+                    
+                      <input type="submit" value="login">
+                    </form>
+                    
+                  </div>
+                </div>
+
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+              
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <button id="signup-button" class="nav-link">Signup</button>
+                </li>
+                <li class="nav-item">
+                  <button id="login-btn" class="nav-link">Login</button>
+                </li>
+              </ul>
+
+             </div>
+          </div>
+          
+        </nav>
+      <h1>New In the Store</h1>
+      <div id ="new" class="row">
+          <div class="box col-md-6 col-lg-3 middle"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlvHqSl3kjjk5QpcLlj_fwz4mzgXBi1sxBA&usqp=CAU" alt=""></a></div>
+          <div class="box col-md-6 col-lg-3 middle"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSEtmaq1rcfyPm3xQV_XJbsQhpHYtLoeuXg&usqp=CAU" alt=""></a></div>
+          <div class="box col-md-6 col-lg-3 middle"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwe4mVlL5iLKSCnP9eEadeIAqcnaguLB7VpQ&usqp=CAU" alt=""></a></div>
+          <div class="box col-md-6 col-lg-3 middle"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamCkBy668m9Gv6ePOQFy9Cjog5WcoBTnsKg&usqp=CAU" alt=""></a></div>
+      </div>
+      <h2>...Make Your Gains Fair...</h2>
+
+      <div class="card-container">
+      <div  class="card">
+        <img  src="https://images.unsplash.com/photo-1584116831289-e53912463c35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" style="width: 400px;" alt="..">
+        <div class="card-body" style="background-color: #f2cece;">
+          <h4 class="card-title">Whey ur way</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+            veritatis, libero a totam soluta earum ut quasi nihil eos, fugiat dolores sint dolorem reprehenderit.Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+            veritatis, libero a totam soluta earum sum dolor 
+            sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati</p>
+          <a href="#" class="btn btn-outline-success btn-md">Click to whey</a>
+        </div>
+      </div>
+      <div  class="card">
+        <img  src="https://images.unsplash.com/photo-1584116831289-e53912463c35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" style="width: 400px;" alt="..">
+        <div class="card-body  bg-info">
+          <h4 class="card-title">Whey ur way</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+            veritatis, libero a totam soluta earum ut quasi nihil eos, fugiat dolores sint dolorem reprehenderit.Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+            veritatis, libero a totam soluta earum sum dolor 
+            sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati</p>
+          <a href="#" class="btn btn-outline-success btn-md">Click to whey</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4">
+        <h5>Best for men</h5>
+        <div class="row align-items-center justify-content-center">
+          <div class="color_change col-sm-12 col-md-12 col-lg-6"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6WI21Fmr_T87ia9n-fIpaROf_IW3qKhVDA&usqp=CAU" alt=""></a></div>
+          <div class="color_change col-sm-12 col-md-12 col-lg-6"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdnmiYREnAbgSuYke5Ku4i3ip9cuauIVX8Z2hU08n9QmYGpNf7mewx_HmjfmZuQL9uXc&usqp=CAU" alt=""></a></div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h5>Best for Women</h5>
+        <div class="row">
+          <div class="color_change col-sm-12 col-md-12 col-lg-6 "><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbaD2VHyjl0mF9GAdCD4wLTRxzquVA4lpiFg&usqp=CAU" alt=""></a></div>
+          <div class="color_change col-sm-12 col-md-12 col-lg-6"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xfLenAX0kTDnvRG0CdrepAxLxetg9mx71g&usqp=CAU" alt=""></a></div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h5>Best for All</h5>
+        <div class="row">
+          <div class="color_change col-sm-12 col-md-12 col-lg-6 "><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq8aGj5wBr-Oedxd8fNnbKA-jtrE574Mwj2I1X88pnXFX-GPmPmPai9j6uj0lC1RAl43k&usqp=CAU" alt=""></a></div>
+          <div class="color_change col-sm-12 col-md-12 col-lg-6"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6WI21Fmr_T87ia9n-fIpaROf_IW3qKhVDA&usqp=CAU" alt=""></a></div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div  id="maxi" class="end row justify-content-around align-items-end">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card  bg-info">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1595348020949-87cdfbb44174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              <div class="card-body">
+                  <h6 class="card-title">PLANT+</h6>
+                  <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+                    veritatis, libero a totam soluta earum ut quasi nihil eos, fugiat dolores sint dolorem reprehenderit.Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit.
+                    sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati</p>
+                  <a href="" class="btn btn-outline-success">Buy Now</a>
+                  <a href="" class="btn btn-outline-danger"><i class="far fa-heart"></i></a>
+                  
+              </div>
+          </div>
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-4">
+        <div class="card" style="background-color: #f2cece;" >
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1584116831211-f5a7d8273f1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="card-body">
+                <h6 class="card-title">STACKS</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+                  veritatis, libero a totam soluta earum ut quasi nihil eos, fugiat dolores sint dolorem reprehenderit.Lorem ipsum dolor 
+                  sit amet consectetur adipisicing elit.
+                  sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati</p>
+                <a href="" class="btn btn-outline-success">Buy Now</a>
+                <a href="" class="btn btn-outline-danger"><i class="far fa-heart"></i></a>
+                
+            </div>
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card bg-info">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1584116831322-57d789ed6a40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          <div class="card-body">
+              <h6 class="card-title">SYNTHA6</h6>
+              <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minus nulla odit maiores? Excepturi id 
+                veritatis, libero a totam soluta earum ut quasi nihil eos, fugiat dolores sint dolorem reprehenderit.Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit.
+                sit amet consectetur adipisicing elit. Laborum, sequi quae  nobis ut voluptatibus sunt pariatur necessitati</p>
+              <a href="" class="btn btn-outline-success">Buy Now</a>
+              <a href="" class="btn btn-outline-danger"><i class="far fa-heart"></i></a>
+              
+          </div>
+      </div>
+   </div>
+      
+  </div>
+  <hr>
+  <div class="container">
+   <div class="row jc_around">
+        <div id="div1" class="col-md-3">
+          <img class=img-fluid src="https://images.unsplash.com/photo-1579722820308-d74e571900a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        </div>
+        <div id="div2" class="col-sm-12 col-lg-6">
+          <h3>Instore Purchases Include</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat blanditiis adipisci commodi hic esse veritatis cupiditate, iusto delectus corporis nulla, est atque voluptate facere, 
+            omnis officiis culpa. Sed, necessitatibus consectetur.</p>
+            <button>Use Coupon</button>
+            <button>Redeem Code</button>
+            <button>In Store PickUp</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row jc_around">
+           <div id="divv1" class="col-sm-12 col-lg-6">
+            <h3>Order Online</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat blanditiis adipisci commodi hic esse veritatis cupiditate, iusto delectus corporis nulla, est atque voluptate facere, 
+              omnis officiis culpa. Sed, necessitatibus consectetur.</p>
+              <button>Order Now</button>
+           </div>
+           <div id="divv2" class="col-md-6">
+            <img class=img-fluid src="https://media.istockphoto.com/id/1287301965/photo/healthy-young-man-stretching-from-his-home-during-covid-19-lockdown.jpg?s=170667a&w=0&k=20&c=9lDJ6sxrCQe7-TII4liARd76PsHQNaand2aWkJ0feec=" alt="">
+
+           </div>
+         </div>
+       </div>
+
+<hr>
+      <div class="container">
+        <div class="row jc_around">
+          <div class="col-sm-6 jcx">
+           <a href=""><img src="https://images.unsplash.com/photo-1622818426027-8909055faae8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdoZXklMjBwcm90ZWlufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a>
+          </div>
+          <div class="col-sm-6 jcy">
+           <a href=""><img src=" https://images.unsplash.com/photo-1622818426042-cc370060bf34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdoZXklMjBwcm90ZWlufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    <script  src="e_Commerce.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+</body>
+</html> 
+
+
